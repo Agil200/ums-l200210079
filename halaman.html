@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Analisis WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Laporan Analisis WhatsApp</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="info">
+                <h2>Data Mahasiswa</h2>
+                <div><label>Nama: </label> <span id="nama">Ragiel Abiul Pratama</span></div>
+                <div><label>NIM: </label> <span id="nim">L200210079</span></div>
+                <div><label>Kelas: </label> <span id="kelas">IPSD-A</span></div>
+            </section>
+            <section class="report-content">
+                <h2>Proses Analisis Menggunakan Jupyter Notebook</h2>
+                <ul>
+                    <li>Export konten group WhatsApp menjadi file teks
+                        <img src="Foto/1.png" alt="File teks">
+                    </li>
+                    <li>Merubah file teks (.txt) menjadi file (.csv)
+                        <img src="Foto/2.png" alt="File CSV">
+                    </li>
+                    <li>Melakukan kompres file .csv ke dalam .tar
+                        <img src="Foto/3.png" alt="File TAR">
+                    </li>
+                    <li>Melakukan pembersihan data untuk hanya mengambil angka, huruf, dan tanda baca umum dan disimpan kedalam tar
+                        <img src="Foto/4.png" alt="Data cleaned">
+                    </li>
+                    <li>Melakukan scale data untuk preprocessing dari data didalam tar
+                        <img src="Foto/scale.png" alt="Data scaled">
+                    </li>
+                    <li>Menyimpan data matrix dalam bentuk CSV ke dalam TAR <br>
+                        <img src="Foto/5.png" alt="Matrix CSV">
+                    </li>
+                    <li>Mendapatkan kata-kata yang paling sering muncul di setiap kluster (top words)
+                        <img src="Foto/6.png" alt="Top words">
+                    </li>
+                    <li>Membuat matriks fitur berbasis teks menggunakan CountVectorizer
+                        <img src="Foto/7.png" alt="Fitur kolom">
+                    </li>
+                    <li>Melakukan clustering menggunakan algoritma KMeans
+                        <img src="Foto/8.png" alt="KMeans clustering">
+                    </li>
+                    <li>Menganalisis kluster pesan dan mengidentifikasi tiga kata paling sering muncul
+                        <img src="Foto/9.png" alt="Cluster analysis">
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ums-l200210079.github.io . All rights reserved.</p>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
